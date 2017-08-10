@@ -14,6 +14,7 @@ else sad_path(number)
 end
 
 def sad_path(number)
+  case number
   if number.is_a? String
     'no no, you can only put in integers ;)'
   elsif number.is_a? Float

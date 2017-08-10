@@ -14,13 +14,13 @@ else sad_path(number)
 end
 
 def sad_path(number)
-  case number
   if number.is_a? String
     'no no, you can only put in integers ;)'
   elsif number.is_a? Float
     'no no, you can only put in integers ;)'
   else 'stay positive :)'
   end
+end
 
 def has_zero_remainder?(number, divider)
   number % divider == 0

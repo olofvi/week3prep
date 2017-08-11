@@ -1,3 +1,5 @@
+required './spec/fizz_buzz_spec.rb'
+
 def fizz_buzz(number)
   if has_zero_remainder?(number, 15)
     'fizz_buzz'

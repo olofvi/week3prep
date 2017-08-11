@@ -1,4 +1,4 @@
-required './spec/fizz_buzz_spec.rb'
+require pry
 
 def fizz_buzz(number)
   if has_zero_remainder?(number, 15)
@@ -23,6 +23,7 @@ def sad_path(number)
   else number.is_a? <=0
      'stay positive :)'
   end
+end
 
 def has_zero_remainder?(number, divider)
   number % divider == 0

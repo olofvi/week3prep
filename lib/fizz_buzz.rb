@@ -18,9 +18,9 @@ def sad_path(number)
     'no no, you can only put in integers ;)'
   elsif number.is_a? Float
     'no no, you can only put in integers ;)'
-  else 'stay positive :)'
+  else number.is_a? <=0
+     'stay positive :)'
   end
-end
 
 def has_zero_remainder?(number, divider)
   number % divider == 0

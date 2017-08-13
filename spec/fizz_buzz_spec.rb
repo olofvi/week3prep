@@ -14,12 +14,12 @@ describe 'fizz_buzz' do
     expect(fizz_buzz(60)).to eq 'fizz_buzz'
   end
   it "returns 'no no, you can only put in integers ;)' if users puts in string'"do
-    expect(sad_path(String)).to eq 'no no, you can only put in integers ;)'
+    expect(fizz_buzz(String)).to eq 'no no, you can only put in integers ;)'
   end
   it "returns 'no no, you can only put in integers ;)'if user puts in float'"do
-    expect(sad_path(Float)).to eq 'no no, you can only put in integers ;)'
+    expect(fizz_buzz(Float)).to eq 'no no, you can only put in integers ;)'
   end
   it "returns 'stay positive :)' if users puts in a negative number"do
-    expect(sad_path(-1)).to eq 'stay positive :)'
+    expect(fizz_buzz(-1)).to eq 'stay positive :)'
   end
 end
